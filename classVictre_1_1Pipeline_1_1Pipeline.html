@@ -100,6 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a45627045131474e1dc8c218655aee2b2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVictre_1_1Pipeline_1_1Pipeline.html#a45627045131474e1dc8c218655aee2b2">__init__</a></td></tr>
+<tr class="memdesc:a45627045131474e1dc8c218655aee2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object constructor for the <a class="el" href="namespaceVictre.html">Victre</a> pipeline class.  <a href="#a45627045131474e1dc8c218655aee2b2">More...</a><br/></td></tr>
 <tr class="separator:a45627045131474e1dc8c218655aee2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372ba5d565da4224e4768316ac640f99"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVictre_1_1Pipeline_1_1Pipeline.html#a372ba5d565da4224e4768316ac640f99">project</a></td></tr>
 <tr class="separator:a372ba5d565da4224e4768316ac640f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,38 +220,74 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Object constructor for the Victre pipeline class
 
-@type ip: str
-@param ip: IP address to run the projection (GPU enabled)
+<p>Object constructor for the <a class="el" href="namespaceVictre.html">Victre</a> pipeline class. </p>
+<p>ip: str </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip,:</td><td>IP address to run the projection (GPU enabled)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>seed: int </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed,:</td><td>Random seed used to generate or read the phantom</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>phantom_file: str </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phantom_file,:</td><td>Path to file containing the phantom to be loaded</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>spectrum_file: str </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spectrum_file,:</td><td>Path to file containing the spectrum used to project in MCGPU</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>lesion_file: str </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lesion_file,:</td><td>Path to file containing the lesion to be inserted (in HDF5 format)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>materials: dict </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materials,:</td><td>Dictionary including the materials to be used during projection</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>arguments_mcgpu: dict </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arguments_mcgpu,:</td><td>Arguments to be overridden for the projection in MCGPU</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>arguments_recon: dict </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arguments_recon,:</td><td>Arguments to be overridden for the reconstruction algorithm</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>flatfield_file: str </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flatfield_file,:</td><td>Path to the flatfield file for projection</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>: string </p>
+<dl class="section return"><dt>Returns</dt><dd>: Returns a sentence with your variables in it </dd></dl>
 
-@type seed: int
-@param seed: Random seed used to generate or read the phantom
-
-@type phantom_file: str
-@param phantom_file: Path to file containing the phantom to be loaded
-
-@type spectrum_file: str
-@param spectrum_file: Path to file containing the spectrum used to project in MCGPU
-
-@type lesion_file: str
-@param lesion_file: Path to file containing the lesion to be inserted (in HDF5 format)
-
-@type materials: dict
-@param materials: Dictionary including the materials to be used during projection
-
-@type arguments_mcgpu: dict
-@param arguments_mcgpu: Arguments to be overridden for the projection in MCGPU
-
-@type arguments_recon: dict
-@param arguments_recon: Arguments to be overridden for the reconstruction algorithm
-
-@type flatfield_file: str
-@param flatfield_file: Path to the flatfield file for projection
-
-@rtype: string
-@return: Returns a sentence with your variables in it
-</pre> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
