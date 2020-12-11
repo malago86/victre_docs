@@ -1,0 +1,62 @@
+\hypertarget{namespaceget__average__lesion}{\section{get\-\_\-average\-\_\-lesion Namespace Reference}
+\label{namespaceget__average__lesion}\index{get\-\_\-average\-\_\-lesion@{get\-\_\-average\-\_\-lesion}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceget__average__lesion_a6fa4030a8ff4bd77b404c5c5fe1dcba0}{get\-\_\-folder\-\_\-contents}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{namespaceget__average__lesion_a04e4f7fdef2b31493b5aab71ddf47d7f}{lesion\-\_\-str}
+\item 
+tuple \hyperlink{namespaceget__average__lesion_a18dd42d421835ddf04df21748b1fbd97}{phantoms} = \hyperlink{namespaceget__average__lesion_a6fa4030a8ff4bd77b404c5c5fe1dcba0}{get\-\_\-folder\-\_\-contents}(\char`\"{}results\char`\"{})
+\item 
+dictionary \hyperlink{namespaceget__average__lesion_a1fd4bf63fb19d5891e9e0d3390074201}{mean}
+\item 
+int \hyperlink{namespaceget__average__lesion_aa8eb6c12f2c638c3c97b5cbb4f7aa6b0}{num\-\_\-cases} = 3
+\item 
+tuple \hyperlink{namespaceget__average__lesion_af4a292c67ad6c19a4faf0f86f5aa0f45}{rois} = h5py.\-File(ph + \char`\"{}/R\-O\-Is.\-h5\char`\"{}, \char`\"{}r\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceget__average__lesion_a6fa4030a8ff4bd77b404c5c5fe1dcba0}{\index{get\-\_\-average\-\_\-lesion@{get\-\_\-average\-\_\-lesion}!get\-\_\-folder\-\_\-contents@{get\-\_\-folder\-\_\-contents}}
+\index{get\-\_\-folder\-\_\-contents@{get\-\_\-folder\-\_\-contents}!get_average_lesion@{get\-\_\-average\-\_\-lesion}}
+\subsubsection[{get\-\_\-folder\-\_\-contents}]{\setlength{\rightskip}{0pt plus 5cm}def get\-\_\-average\-\_\-lesion.\-get\-\_\-folder\-\_\-contents (
+\begin{DoxyParamCaption}
+\item[{}]{folder}
+\end{DoxyParamCaption}
+)}}\label{namespaceget__average__lesion_a6fa4030a8ff4bd77b404c5c5fe1dcba0}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceget__average__lesion_a04e4f7fdef2b31493b5aab71ddf47d7f}{\index{get\-\_\-average\-\_\-lesion@{get\-\_\-average\-\_\-lesion}!lesion\-\_\-str@{lesion\-\_\-str}}
+\index{lesion\-\_\-str@{lesion\-\_\-str}!get_average_lesion@{get\-\_\-average\-\_\-lesion}}
+\subsubsection[{lesion\-\_\-str}]{\setlength{\rightskip}{0pt plus 5cm}dictionary get\-\_\-average\-\_\-lesion.\-lesion\-\_\-str}}\label{namespaceget__average__lesion_a04e4f7fdef2b31493b5aab71ddf47d7f}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{Constants.VICTRE\_CLUSTERCALC: \textcolor{stringliteral}{"clustercalc"},
+2               Constants.VICTRE\_SPICULATED: \textcolor{stringliteral}{"spiculated"}\}
+\end{DoxyCode}
+\hypertarget{namespaceget__average__lesion_a1fd4bf63fb19d5891e9e0d3390074201}{\index{get\-\_\-average\-\_\-lesion@{get\-\_\-average\-\_\-lesion}!mean@{mean}}
+\index{mean@{mean}!get_average_lesion@{get\-\_\-average\-\_\-lesion}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}dictionary get\-\_\-average\-\_\-lesion.\-mean}}\label{namespaceget__average__lesion_a1fd4bf63fb19d5891e9e0d3390074201}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{\textcolor{stringliteral}{"dbt"}: \{Constants.VICTRE\_CLUSTERCALC: np.zeros((5, 65, 65)),
+2                 Constants.VICTRE\_SPICULATED: np.zeros((9, 109, 109))\},
+3         \textcolor{stringliteral}{"dm"}: \{Constants.VICTRE\_CLUSTERCALC: np.zeros((65, 65)),
+4                Constants.VICTRE\_SPICULATED: np.zeros((109, 109))\}
+5         \}
+\end{DoxyCode}
+\hypertarget{namespaceget__average__lesion_aa8eb6c12f2c638c3c97b5cbb4f7aa6b0}{\index{get\-\_\-average\-\_\-lesion@{get\-\_\-average\-\_\-lesion}!num\-\_\-cases@{num\-\_\-cases}}
+\index{num\-\_\-cases@{num\-\_\-cases}!get_average_lesion@{get\-\_\-average\-\_\-lesion}}
+\subsubsection[{num\-\_\-cases}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-average\-\_\-lesion.\-num\-\_\-cases = 3}}\label{namespaceget__average__lesion_aa8eb6c12f2c638c3c97b5cbb4f7aa6b0}
+\hypertarget{namespaceget__average__lesion_a18dd42d421835ddf04df21748b1fbd97}{\index{get\-\_\-average\-\_\-lesion@{get\-\_\-average\-\_\-lesion}!phantoms@{phantoms}}
+\index{phantoms@{phantoms}!get_average_lesion@{get\-\_\-average\-\_\-lesion}}
+\subsubsection[{phantoms}]{\setlength{\rightskip}{0pt plus 5cm}list get\-\_\-average\-\_\-lesion.\-phantoms = {\bf get\-\_\-folder\-\_\-contents}(\char`\"{}results\char`\"{})}}\label{namespaceget__average__lesion_a18dd42d421835ddf04df21748b1fbd97}
+\hypertarget{namespaceget__average__lesion_af4a292c67ad6c19a4faf0f86f5aa0f45}{\index{get\-\_\-average\-\_\-lesion@{get\-\_\-average\-\_\-lesion}!rois@{rois}}
+\index{rois@{rois}!get_average_lesion@{get\-\_\-average\-\_\-lesion}}
+\subsubsection[{rois}]{\setlength{\rightskip}{0pt plus 5cm}tuple get\-\_\-average\-\_\-lesion.\-rois = h5py.\-File(ph + \char`\"{}/R\-O\-Is.\-h5\char`\"{}, \char`\"{}r\char`\"{})}}\label{namespaceget__average__lesion_af4a292c67ad6c19a4faf0f86f5aa0f45}

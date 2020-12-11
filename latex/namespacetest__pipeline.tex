@@ -1,0 +1,105 @@
+\hypertarget{namespacetest__pipeline}{\section{test\-\_\-pipeline Namespace Reference}
+\label{namespacetest__pipeline}\index{test\-\_\-pipeline@{test\-\_\-pipeline}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacetest__pipeline_af92fee384c18b13c6673a89759d43ed0}{hpc\-\_\-cluster\-\_\-ip} = \char`\"{}192.\-168.\-45.\-21\char`\"{}
+\item 
+string \hyperlink{namespacetest__pipeline_a5a533cd65e06752395913aef099f6f3a}{phantoms\-\_\-folder} = \char`\"{}/gpfs\-\_\-projects/V\-I\-C\-T\-R\-E/pivotal/phantoms/with\-Lesion/\char`\"{}
+\item 
+string \hyperlink{namespacetest__pipeline_ae1187c73a8652306ffcb6026d1c447a9}{density} = \char`\"{}dense\char`\"{}
+\item 
+int \hyperlink{namespacetest__pipeline_a2cc55609849787d81000c76439d285af}{seed} = 2132574818
+\item 
+string \hyperlink{namespacetest__pipeline_a04ba5a1d7ea995de9393c50eb14ef9ad}{spectrum\-\_\-file} = \char`\"{}./Victre/projection/spectrum/W28k\-Vp\-\_\-\-Rh50um\-\_\-\-Be1mm.\-spc\char`\"{}
+\item 
+list \hyperlink{namespacetest__pipeline_a9b60cd1b189b1d4b7ed5d792e12598db}{lesion\-\_\-only\-\_\-materials}
+\item 
+string \hyperlink{namespacetest__pipeline_a12b71fc499f0a1951e42b754b6cfa198}{phantom\-\_\-file} = \hyperlink{namespacetest__pipeline_a5a533cd65e06752395913aef099f6f3a}{phantoms\-\_\-folder}+\hyperlink{namespacetest__pipeline_ae1187c73a8652306ffcb6026d1c447a9}{density}+\char`\"{}/pcl\-\_\-\{\-:d\}\-\_\-crop.\-raw.\-gz\char`\"{}
+\item 
+tuple \hyperlink{namespacetest__pipeline_a4f34ebd50c5400c94a3b33124629e2fe}{pline}
+\item 
+tuple \hyperlink{namespacetest__pipeline_a0891497d3339772fa64ecb2ef3816a8a}{vx\-\_\-locations}
+\item 
+string \hyperlink{namespacetest__pipeline_ae843f1cf40718b92abe9429113865859}{mhd\-\_\-file} = \hyperlink{namespacetest__pipeline_a5a533cd65e06752395913aef099f6f3a}{phantoms\-\_\-folder}+\hyperlink{namespacetest__pipeline_ae1187c73a8652306ffcb6026d1c447a9}{density}+\char`\"{}/pc\-\_\-\{\-:d\}\-\_\-crop.\-mhd\char`\"{}
+\item 
+\hyperlink{namespacetest__pipeline_a0adaf87bfe7dc26e1a0d89f220fb981e}{offset} = None
+\item 
+tuple \hyperlink{namespacetest__pipeline_ae549bb444ef90158d4f47e0c3f8a17d0}{line} = f.\-readline()
+\item 
+dictionary \hyperlink{namespacetest__pipeline_ac3f90bba6b3ba7eb9c6c5fbf56f3f540}{roi\-\_\-sizes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacetest__pipeline_ae1187c73a8652306ffcb6026d1c447a9}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!density@{density}}
+\index{density@{density}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{density}]{\setlength{\rightskip}{0pt plus 5cm}string test\-\_\-pipeline.\-density = \char`\"{}dense\char`\"{}}}\label{namespacetest__pipeline_ae1187c73a8652306ffcb6026d1c447a9}
+\hypertarget{namespacetest__pipeline_af92fee384c18b13c6673a89759d43ed0}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!hpc\-\_\-cluster\-\_\-ip@{hpc\-\_\-cluster\-\_\-ip}}
+\index{hpc\-\_\-cluster\-\_\-ip@{hpc\-\_\-cluster\-\_\-ip}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{hpc\-\_\-cluster\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}string test\-\_\-pipeline.\-hpc\-\_\-cluster\-\_\-ip = \char`\"{}192.\-168.\-45.\-21\char`\"{}}}\label{namespacetest__pipeline_af92fee384c18b13c6673a89759d43ed0}
+\hypertarget{namespacetest__pipeline_a9b60cd1b189b1d4b7ed5d792e12598db}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!lesion\-\_\-only\-\_\-materials@{lesion\-\_\-only\-\_\-materials}}
+\index{lesion\-\_\-only\-\_\-materials@{lesion\-\_\-only\-\_\-materials}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{lesion\-\_\-only\-\_\-materials}]{\setlength{\rightskip}{0pt plus 5cm}list test\-\_\-pipeline.\-lesion\-\_\-only\-\_\-materials}}\label{namespacetest__pipeline_a9b60cd1b189b1d4b7ed5d792e12598db}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = [\{\textcolor{stringliteral}{"material"}: \textcolor{stringliteral}{"./Victre/projection/material/air\_\_5-120keV.mcgpu.gz"},
+2                           \textcolor{stringliteral}{"density"}: 0.0012,
+3                           \textcolor{stringliteral}{"voxel\_id"}: [0, 1, 2, 29, 33, 88, 40, 125, 150, 225, 95, 50, 65, 66]
+4                           \},
+5                          \{\textcolor{stringliteral}{"material"}: \textcolor{stringliteral}{"./Victre/projection/material/glandular\_\_5-120keV.mcgpu.gz"},
+6                           \textcolor{stringliteral}{"density"}: 1.06,
+7                              \textcolor{stringliteral}{"voxel\_id"}: [200]
+8                           \},
+9                          \{\textcolor{stringliteral}{"material"}: \textcolor{stringliteral}{"./Victre/projection/material/CalciumOxalate\_\_5-120keV.mcgpu.gz"},
+10                           \textcolor{stringliteral}{"density"}: 1.781,
+11                              \textcolor{stringliteral}{"voxel\_id"}: [250]
+12                           \}
+13                          ]
+\end{DoxyCode}
+\hypertarget{namespacetest__pipeline_ae549bb444ef90158d4f47e0c3f8a17d0}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!line@{line}}
+\index{line@{line}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\-\_\-pipeline.\-line = f.\-readline()}}\label{namespacetest__pipeline_ae549bb444ef90158d4f47e0c3f8a17d0}
+\hypertarget{namespacetest__pipeline_ae843f1cf40718b92abe9429113865859}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!mhd\-\_\-file@{mhd\-\_\-file}}
+\index{mhd\-\_\-file@{mhd\-\_\-file}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{mhd\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string test\-\_\-pipeline.\-mhd\-\_\-file = {\bf phantoms\-\_\-folder}+{\bf density}+\char`\"{}/pc\-\_\-\{\-:d\}\-\_\-crop.\-mhd\char`\"{}}}\label{namespacetest__pipeline_ae843f1cf40718b92abe9429113865859}
+\hypertarget{namespacetest__pipeline_a0adaf87bfe7dc26e1a0d89f220fb981e}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!offset@{offset}}
+\index{offset@{offset}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}list test\-\_\-pipeline.\-offset = None}}\label{namespacetest__pipeline_a0adaf87bfe7dc26e1a0d89f220fb981e}
+\hypertarget{namespacetest__pipeline_a12b71fc499f0a1951e42b754b6cfa198}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!phantom\-\_\-file@{phantom\-\_\-file}}
+\index{phantom\-\_\-file@{phantom\-\_\-file}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{phantom\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string test\-\_\-pipeline.\-phantom\-\_\-file = {\bf phantoms\-\_\-folder}+{\bf density}+\char`\"{}/pcl\-\_\-\{\-:d\}\-\_\-crop.\-raw.\-gz\char`\"{}}}\label{namespacetest__pipeline_a12b71fc499f0a1951e42b754b6cfa198}
+\hypertarget{namespacetest__pipeline_a5a533cd65e06752395913aef099f6f3a}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!phantoms\-\_\-folder@{phantoms\-\_\-folder}}
+\index{phantoms\-\_\-folder@{phantoms\-\_\-folder}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{phantoms\-\_\-folder}]{\setlength{\rightskip}{0pt plus 5cm}string test\-\_\-pipeline.\-phantoms\-\_\-folder = \char`\"{}/gpfs\-\_\-projects/V\-I\-C\-T\-R\-E/pivotal/phantoms/with\-Lesion/\char`\"{}}}\label{namespacetest__pipeline_a5a533cd65e06752395913aef099f6f3a}
+\hypertarget{namespacetest__pipeline_a4f34ebd50c5400c94a3b33124629e2fe}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!pline@{pline}}
+\index{pline@{pline}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{pline}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\-\_\-pipeline.\-pline}}\label{namespacetest__pipeline_a4f34ebd50c5400c94a3b33124629e2fe}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \hyperlink{namespaceVictre_1_1Pipeline}{Victre.Pipeline}(ip=hpc\_cluster\_ip, seed=seed,
+2                         phantom\_file=phantom\_file)
+\end{DoxyCode}
+\hypertarget{namespacetest__pipeline_ac3f90bba6b3ba7eb9c6c5fbf56f3f540}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!roi\-\_\-sizes@{roi\-\_\-sizes}}
+\index{roi\-\_\-sizes@{roi\-\_\-sizes}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{roi\-\_\-sizes}]{\setlength{\rightskip}{0pt plus 5cm}dictionary test\-\_\-pipeline.\-roi\-\_\-sizes}}\label{namespacetest__pipeline_ac3f90bba6b3ba7eb9c6c5fbf56f3f540}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{Constants.VICTRE\_SPICULATED: [109, 109, 9],
+2              Constants.VICTRE\_CLUSTERCALC: [65, 65, 5]\}
+\end{DoxyCode}
+\hypertarget{namespacetest__pipeline_a2cc55609849787d81000c76439d285af}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!seed@{seed}}
+\index{seed@{seed}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}int test\-\_\-pipeline.\-seed = 2132574818}}\label{namespacetest__pipeline_a2cc55609849787d81000c76439d285af}
+\hypertarget{namespacetest__pipeline_a04ba5a1d7ea995de9393c50eb14ef9ad}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!spectrum\-\_\-file@{spectrum\-\_\-file}}
+\index{spectrum\-\_\-file@{spectrum\-\_\-file}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{spectrum\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string test\-\_\-pipeline.\-spectrum\-\_\-file = \char`\"{}./Victre/projection/spectrum/W28k\-Vp\-\_\-\-Rh50um\-\_\-\-Be1mm.\-spc\char`\"{}}}\label{namespacetest__pipeline_a04ba5a1d7ea995de9393c50eb14ef9ad}
+\hypertarget{namespacetest__pipeline_a0891497d3339772fa64ecb2ef3816a8a}{\index{test\-\_\-pipeline@{test\-\_\-pipeline}!vx\-\_\-locations@{vx\-\_\-locations}}
+\index{vx\-\_\-locations@{vx\-\_\-locations}!test_pipeline@{test\-\_\-pipeline}}
+\subsubsection[{vx\-\_\-locations}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\-\_\-pipeline.\-vx\-\_\-locations}}\label{namespacetest__pipeline_a0891497d3339772fa64ecb2ef3816a8a}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = np.loadtxt(\textcolor{stringliteral}{"\{:s\}/pcl\_\{:d\}\_crop.loc"}.format(
+2     phantoms\_folder + density, seed), delimiter=\textcolor{stringliteral}{' '}, dtype=(int), unpack=\textcolor{keyword}{True})
+\end{DoxyCode}

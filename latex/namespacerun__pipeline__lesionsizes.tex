@@ -1,0 +1,124 @@
+\hypertarget{namespacerun__pipeline__lesionsizes}{\section{run\-\_\-pipeline\-\_\-lesionsizes Namespace Reference}
+\label{namespacerun__pipeline__lesionsizes}\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacerun__pipeline__lesionsizes_a275196213a52b483bde36a8d8b8535cb}{parser}
+\item 
+string \hyperlink{namespacerun__pipeline__lesionsizes_aa88ad88d9cf23592a308b4d4e2ed6ebf}{help} = 'Size for the spiculated mass'
+\item 
+tuple \hyperlink{namespacerun__pipeline__lesionsizes_ae091ae8eef37ab6c53b0409575d19343}{lesion\-\_\-size} = parser.\-parse\-\_\-args()
+\item 
+string \hyperlink{namespacerun__pipeline__lesionsizes_a459355f58091ae51752cbc1b81939a7d}{hpc\-\_\-cluster\-\_\-ip} = \char`\"{}192.\-168.\-45.\-21\char`\"{}
+\item 
+string \hyperlink{namespacerun__pipeline__lesionsizes_a121e580b0ae55595847533bd0f4c9250}{phantoms\-\_\-folder} = \char`\"{}/gpfs\-\_\-projects/V\-I\-C\-T\-R\-E/pivotal/phantoms/with\-Lesion/\char`\"{}
+\item 
+string \hyperlink{namespacerun__pipeline__lesionsizes_ae2a3f1b39ec7dc28c3aa3bc223432ba8}{density} = \char`\"{}dense\char`\"{}
+\item 
+int \hyperlink{namespacerun__pipeline__lesionsizes_a23bb2caa24e95d5ce8622ae343b0035f}{num\-\_\-cases} = 3
+\item 
+tuple \hyperlink{namespacerun__pipeline__lesionsizes_a17e351f66c99883c1fc46e398ddb89db}{all\-\_\-seeds} = np.\-loadtxt(\hyperlink{namespacerun__pipeline__lesionsizes_a121e580b0ae55595847533bd0f4c9250}{phantoms\-\_\-folder} + \hyperlink{namespacerun__pipeline__lesionsizes_ae2a3f1b39ec7dc28c3aa3bc223432ba8}{density} + \char`\"{}/seeds.\-txt\char`\"{})
+\item 
+list \hyperlink{namespacerun__pipeline__lesionsizes_aba8698213c56a7ecc0806eb68c010d63}{lesion\-\_\-only\-\_\-materials}
+\item 
+string \hyperlink{namespacerun__pipeline__lesionsizes_aa2e480913d7171fd2b0c89520bcec773}{spectrum\-\_\-file} = \char`\"{}./Victre/projection/spectrum/W28k\-Vp\-\_\-\-Rh50um\-\_\-\-Be1mm\-\_\-\-Al2mm\-\_\-\-M\-T\-F.\-spc\char`\"{}
+\item 
+list \hyperlink{namespacerun__pipeline__lesionsizes_ae359043ae5c4f2c1d8f12c0cdbffb932}{seed} = \hyperlink{namespacerun__pipeline__lesionsizes_a17e351f66c99883c1fc46e398ddb89db}{all\-\_\-seeds}\mbox{[}\hyperlink{namespacerun__pipeline__lesionsizes_a8e812d3e5e9a02e87801a5fcdd32c268}{n}\mbox{]}
+\item 
+\hyperlink{namespacerun__pipeline__lesionsizes_aa31734859d313f521c7643f1db6be86c}{phantom\-\_\-file} = \hyperlink{namespacerun__pipeline__lesionsizes_a121e580b0ae55595847533bd0f4c9250}{phantoms\-\_\-folder}+\hyperlink{namespacerun__pipeline__lesionsizes_ae2a3f1b39ec7dc28c3aa3bc223432ba8}{density}+\textbackslash{}
+\item 
+string \hyperlink{namespacerun__pipeline__lesionsizes_a6036549ef880af11d13c9e0c5d2c001a}{lesion\-\_\-file} = \char`\"{}lesions/spiculated/mass\-\_\--\/308854003\-\_\-size\{\-:.\-2f\}.\-h5\char`\"{}
+\item 
+tuple \hyperlink{namespacerun__pipeline__lesionsizes_ac13a2bd6cea7d4d8155376ddaf1ba751}{pline}
+\item 
+dictionary \hyperlink{namespacerun__pipeline__lesionsizes_a3b75350f1aa1a1b47aa8ef34a06809db}{roi\-\_\-sizes}
+\item 
+int \hyperlink{namespacerun__pipeline__lesionsizes_a8e812d3e5e9a02e87801a5fcdd32c268}{n} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacerun__pipeline__lesionsizes_a17e351f66c99883c1fc46e398ddb89db}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!all\-\_\-seeds@{all\-\_\-seeds}}
+\index{all\-\_\-seeds@{all\-\_\-seeds}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{all\-\_\-seeds}]{\setlength{\rightskip}{0pt plus 5cm}tuple run\-\_\-pipeline\-\_\-lesionsizes.\-all\-\_\-seeds = np.\-loadtxt({\bf phantoms\-\_\-folder} + {\bf density} + \char`\"{}/seeds.\-txt\char`\"{})}}\label{namespacerun__pipeline__lesionsizes_a17e351f66c99883c1fc46e398ddb89db}
+\hypertarget{namespacerun__pipeline__lesionsizes_ae2a3f1b39ec7dc28c3aa3bc223432ba8}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!density@{density}}
+\index{density@{density}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{density}]{\setlength{\rightskip}{0pt plus 5cm}string run\-\_\-pipeline\-\_\-lesionsizes.\-density = \char`\"{}dense\char`\"{}}}\label{namespacerun__pipeline__lesionsizes_ae2a3f1b39ec7dc28c3aa3bc223432ba8}
+\hypertarget{namespacerun__pipeline__lesionsizes_aa88ad88d9cf23592a308b4d4e2ed6ebf}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!help@{help}}
+\index{help@{help}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{help}]{\setlength{\rightskip}{0pt plus 5cm}string run\-\_\-pipeline\-\_\-lesionsizes.\-help = 'Size for the spiculated mass'}}\label{namespacerun__pipeline__lesionsizes_aa88ad88d9cf23592a308b4d4e2ed6ebf}
+\hypertarget{namespacerun__pipeline__lesionsizes_a459355f58091ae51752cbc1b81939a7d}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!hpc\-\_\-cluster\-\_\-ip@{hpc\-\_\-cluster\-\_\-ip}}
+\index{hpc\-\_\-cluster\-\_\-ip@{hpc\-\_\-cluster\-\_\-ip}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{hpc\-\_\-cluster\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}string run\-\_\-pipeline\-\_\-lesionsizes.\-hpc\-\_\-cluster\-\_\-ip = \char`\"{}192.\-168.\-45.\-21\char`\"{}}}\label{namespacerun__pipeline__lesionsizes_a459355f58091ae51752cbc1b81939a7d}
+\hypertarget{namespacerun__pipeline__lesionsizes_a6036549ef880af11d13c9e0c5d2c001a}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!lesion\-\_\-file@{lesion\-\_\-file}}
+\index{lesion\-\_\-file@{lesion\-\_\-file}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{lesion\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string run\-\_\-pipeline\-\_\-lesionsizes.\-lesion\-\_\-file = \char`\"{}lesions/spiculated/mass\-\_\--\/308854003\-\_\-size\{\-:.\-2f\}.\-h5\char`\"{}}}\label{namespacerun__pipeline__lesionsizes_a6036549ef880af11d13c9e0c5d2c001a}
+\hypertarget{namespacerun__pipeline__lesionsizes_aba8698213c56a7ecc0806eb68c010d63}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!lesion\-\_\-only\-\_\-materials@{lesion\-\_\-only\-\_\-materials}}
+\index{lesion\-\_\-only\-\_\-materials@{lesion\-\_\-only\-\_\-materials}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{lesion\-\_\-only\-\_\-materials}]{\setlength{\rightskip}{0pt plus 5cm}list run\-\_\-pipeline\-\_\-lesionsizes.\-lesion\-\_\-only\-\_\-materials}}\label{namespacerun__pipeline__lesionsizes_aba8698213c56a7ecc0806eb68c010d63}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = [\{\textcolor{stringliteral}{"material"}: \textcolor{stringliteral}{"./Victre/projection/material/air\_\_5-120keV.mcgpu.gz"},
+2                           \textcolor{stringliteral}{"density"}: 0.0012,
+3                           \textcolor{stringliteral}{"voxel\_id"}: [0, 1, 2, 29, 33, 88, 40, 125, 150, 225, 95, 50, 65, 66]
+4                           \},
+5                          \{\textcolor{stringliteral}{"material"}: \textcolor{stringliteral}{"./Victre/projection/material/glandular\_\_5-120keV.mcgpu.gz"},
+6                           \textcolor{stringliteral}{"density"}: 1.06,
+7                           \textcolor{stringliteral}{"voxel\_id"}: [200]
+8                           \},
+9                          \{\textcolor{stringliteral}{"material"}: \textcolor{stringliteral}{"./Victre/projection/material/CalciumOxalate\_\_5-120keV.mcgpu.gz"},
+10                           \textcolor{stringliteral}{"density"}: 1.781,
+11                           \textcolor{stringliteral}{"voxel\_id"}: [250]
+12                           \}
+13                          ]
+\end{DoxyCode}
+\hypertarget{namespacerun__pipeline__lesionsizes_ae091ae8eef37ab6c53b0409575d19343}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!lesion\-\_\-size@{lesion\-\_\-size}}
+\index{lesion\-\_\-size@{lesion\-\_\-size}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{lesion\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}float run\-\_\-pipeline\-\_\-lesionsizes.\-lesion\-\_\-size = parser.\-parse\-\_\-args()}}\label{namespacerun__pipeline__lesionsizes_ae091ae8eef37ab6c53b0409575d19343}
+\hypertarget{namespacerun__pipeline__lesionsizes_a8e812d3e5e9a02e87801a5fcdd32c268}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!n@{n}}
+\index{n@{n}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}int run\-\_\-pipeline\-\_\-lesionsizes.\-n = 4}}\label{namespacerun__pipeline__lesionsizes_a8e812d3e5e9a02e87801a5fcdd32c268}
+\hypertarget{namespacerun__pipeline__lesionsizes_a23bb2caa24e95d5ce8622ae343b0035f}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!num\-\_\-cases@{num\-\_\-cases}}
+\index{num\-\_\-cases@{num\-\_\-cases}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{num\-\_\-cases}]{\setlength{\rightskip}{0pt plus 5cm}int run\-\_\-pipeline\-\_\-lesionsizes.\-num\-\_\-cases = 3}}\label{namespacerun__pipeline__lesionsizes_a23bb2caa24e95d5ce8622ae343b0035f}
+\hypertarget{namespacerun__pipeline__lesionsizes_a275196213a52b483bde36a8d8b8535cb}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!parser@{parser}}
+\index{parser@{parser}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}tuple run\-\_\-pipeline\-\_\-lesionsizes.\-parser}}\label{namespacerun__pipeline__lesionsizes_a275196213a52b483bde36a8d8b8535cb}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = argparse.ArgumentParser(
+2     description=\textcolor{stringliteral}{'Runs the VICTRE pipeline for a specific mass size'})
+\end{DoxyCode}
+\hypertarget{namespacerun__pipeline__lesionsizes_aa31734859d313f521c7643f1db6be86c}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!phantom\-\_\-file@{phantom\-\_\-file}}
+\index{phantom\-\_\-file@{phantom\-\_\-file}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{phantom\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}run\-\_\-pipeline\-\_\-lesionsizes.\-phantom\-\_\-file = {\bf phantoms\-\_\-folder}+{\bf density}+\textbackslash{}}}\label{namespacerun__pipeline__lesionsizes_aa31734859d313f521c7643f1db6be86c}
+\hypertarget{namespacerun__pipeline__lesionsizes_a121e580b0ae55595847533bd0f4c9250}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!phantoms\-\_\-folder@{phantoms\-\_\-folder}}
+\index{phantoms\-\_\-folder@{phantoms\-\_\-folder}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{phantoms\-\_\-folder}]{\setlength{\rightskip}{0pt plus 5cm}string run\-\_\-pipeline\-\_\-lesionsizes.\-phantoms\-\_\-folder = \char`\"{}/gpfs\-\_\-projects/V\-I\-C\-T\-R\-E/pivotal/phantoms/with\-Lesion/\char`\"{}}}\label{namespacerun__pipeline__lesionsizes_a121e580b0ae55595847533bd0f4c9250}
+\hypertarget{namespacerun__pipeline__lesionsizes_ac13a2bd6cea7d4d8155376ddaf1ba751}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!pline@{pline}}
+\index{pline@{pline}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{pline}]{\setlength{\rightskip}{0pt plus 5cm}tuple run\-\_\-pipeline\-\_\-lesionsizes.\-pline}}\label{namespacerun__pipeline__lesionsizes_ac13a2bd6cea7d4d8155376ddaf1ba751}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \hyperlink{namespaceVictre_1_1Pipeline}{Victre.Pipeline}(ip=hpc\_cluster\_ip,
+2                             seed=seed,
+3                             phantom\_file=phantom\_file,
+4                             lesion\_file=lesion\_file,
+5                             spectrum\_file=spectrum\_file,
+6                             materials=lesion\_only\_materials)
+\end{DoxyCode}
+\hypertarget{namespacerun__pipeline__lesionsizes_a3b75350f1aa1a1b47aa8ef34a06809db}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!roi\-\_\-sizes@{roi\-\_\-sizes}}
+\index{roi\-\_\-sizes@{roi\-\_\-sizes}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{roi\-\_\-sizes}]{\setlength{\rightskip}{0pt plus 5cm}run\-\_\-pipeline\-\_\-lesionsizes.\-roi\-\_\-sizes}}\label{namespacerun__pipeline__lesionsizes_a3b75350f1aa1a1b47aa8ef34a06809db}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = \{Constants.VICTRE\_SPICULATED: [109, 109, 9],
+2                  Constants.VICTRE\_CLUSTERCALC: [65, 65, 5]\}
+\end{DoxyCode}
+\hypertarget{namespacerun__pipeline__lesionsizes_ae359043ae5c4f2c1d8f12c0cdbffb932}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!seed@{seed}}
+\index{seed@{seed}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}list run\-\_\-pipeline\-\_\-lesionsizes.\-seed = {\bf all\-\_\-seeds}\mbox{[}{\bf n}\mbox{]}}}\label{namespacerun__pipeline__lesionsizes_ae359043ae5c4f2c1d8f12c0cdbffb932}
+\hypertarget{namespacerun__pipeline__lesionsizes_aa2e480913d7171fd2b0c89520bcec773}{\index{run\-\_\-pipeline\-\_\-lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}!spectrum\-\_\-file@{spectrum\-\_\-file}}
+\index{spectrum\-\_\-file@{spectrum\-\_\-file}!run_pipeline_lesionsizes@{run\-\_\-pipeline\-\_\-lesionsizes}}
+\subsubsection[{spectrum\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string run\-\_\-pipeline\-\_\-lesionsizes.\-spectrum\-\_\-file = \char`\"{}./Victre/projection/spectrum/W28k\-Vp\-\_\-\-Rh50um\-\_\-\-Be1mm\-\_\-\-Al2mm\-\_\-\-M\-T\-F.\-spc\char`\"{}}}\label{namespacerun__pipeline__lesionsizes_aa2e480913d7171fd2b0c89520bcec773}
