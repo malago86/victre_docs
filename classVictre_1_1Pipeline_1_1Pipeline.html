@@ -219,7 +219,38 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Object constructor for the Victre pipeline class
 
+@type ip: str
+@param ip: IP address to run the projection (GPU enabled)
+
+@type seed: int
+@param seed: Random seed used to generate or read the phantom
+
+@type phantom_file: str
+@param phantom_file: Path to file containing the phantom to be loaded
+
+@type spectrum_file: str
+@param spectrum_file: Path to file containing the spectrum used to project in MCGPU
+
+@type lesion_file: str
+@param lesion_file: Path to file containing the lesion to be inserted (in HDF5 format)
+
+@type materials: dict
+@param materials: Dictionary including the materials to be used during projection
+
+@type arguments_mcgpu: dict
+@param arguments_mcgpu: Arguments to be overridden for the projection in MCGPU
+
+@type arguments_recon: dict
+@param arguments_recon: Arguments to be overridden for the reconstruction algorithm
+
+@type flatfield_file: str
+@param flatfield_file: Path to the flatfield file for projection
+
+@rtype: string
+@return: Returns a sentence with your variables in it
+</pre> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
