@@ -77,52 +77,28 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 
 Object constructor for the \hyperlink{namespaceVictre}{Victre} pipeline class. 
 
-ip str 
+
 \begin{DoxyParams}{Parameters}
-{\em ip} & I\-P address to run the projection (G\-P\-U enabled)\\
+{\em ip} & I\-P address to run the projection (G\-P\-U enabled) \\
+\hline
+{\em seed} & Random seed used to generate or read the phantom \\
+\hline
+{\em phantom\-\_\-file} & Path to file containing the phantom to be loaded \\
+\hline
+{\em spectrum\-\_\-file} & Path to file containing the spectrum used to project in M\-C\-G\-P\-U \\
+\hline
+{\em lesion\-\_\-file} & Path to file containing the lesion to be inserted (in H\-D\-F5 format) \\
+\hline
+{\em materials} & Dictionary including the materials to be used during projection \\
+\hline
+{\em arguments\-\_\-mcgpu} & Arguments to be overridden for the projection in M\-C\-G\-P\-U \\
+\hline
+{\em arguments\-\_\-recon} & Arguments to be overridden for the reconstruction algorithm \\
+\hline
+{\em flatfield\-\_\-file} & Path to the flatfield file for projection \\
 \hline
 \end{DoxyParams}
-seed int 
-\begin{DoxyParams}{Parameters}
-{\em seed} & Random seed used to generate or read the phantom\\
-\hline
-\end{DoxyParams}
-phantom\-\_\-file str 
-\begin{DoxyParams}{Parameters}
-{\em phantom\-\_\-file} & Path to file containing the phantom to be loaded\\
-\hline
-\end{DoxyParams}
-spectrum\-\_\-file str 
-\begin{DoxyParams}{Parameters}
-{\em spectrum\-\_\-file} & Path to file containing the spectrum used to project in M\-C\-G\-P\-U\\
-\hline
-\end{DoxyParams}
-lesion\-\_\-file str 
-\begin{DoxyParams}{Parameters}
-{\em lesion\-\_\-file} & Path to file containing the lesion to be inserted (in H\-D\-F5 format)\\
-\hline
-\end{DoxyParams}
-materials dict 
-\begin{DoxyParams}{Parameters}
-{\em materials} & Dictionary including the materials to be used during projection\\
-\hline
-\end{DoxyParams}
-arguments\-\_\-mcgpu dict 
-\begin{DoxyParams}{Parameters}
-{\em arguments\-\_\-mcgpu} & Arguments to be overridden for the projection in M\-C\-G\-P\-U\\
-\hline
-\end{DoxyParams}
-arguments\-\_\-recon dict 
-\begin{DoxyParams}{Parameters}
-{\em arguments\-\_\-recon} & Arguments to be overridden for the reconstruction algorithm\\
-\hline
-\end{DoxyParams}
-flatfield\-\_\-file str 
-\begin{DoxyParams}{Parameters}
-{\em flatfield\-\_\-file} & Path to the flatfield file for projection\\
-\hline
-\end{DoxyParams}
-None \begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Returns}
 None 
 \end{DoxyReturn}
 

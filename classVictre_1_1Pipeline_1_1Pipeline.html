@@ -222,70 +222,20 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Object constructor for the <a class="el" href="namespaceVictre.html">Victre</a> pipeline class. </p>
-<p>ip str </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ip</td><td>IP address to run the projection (GPU enabled)</td></tr>
+    <tr><td class="paramname">ip</td><td>IP address to run the projection (GPU enabled) </td></tr>
+    <tr><td class="paramname">seed</td><td>Random seed used to generate or read the phantom </td></tr>
+    <tr><td class="paramname">phantom_file</td><td>Path to file containing the phantom to be loaded </td></tr>
+    <tr><td class="paramname">spectrum_file</td><td>Path to file containing the spectrum used to project in MCGPU </td></tr>
+    <tr><td class="paramname">lesion_file</td><td>Path to file containing the lesion to be inserted (in HDF5 format) </td></tr>
+    <tr><td class="paramname">materials</td><td>Dictionary including the materials to be used during projection </td></tr>
+    <tr><td class="paramname">arguments_mcgpu</td><td>Arguments to be overridden for the projection in MCGPU </td></tr>
+    <tr><td class="paramname">arguments_recon</td><td>Arguments to be overridden for the reconstruction algorithm </td></tr>
+    <tr><td class="paramname">flatfield_file</td><td>Path to the flatfield file for projection </td></tr>
   </table>
   </dd>
 </dl>
-<p>seed int </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">seed</td><td>Random seed used to generate or read the phantom</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>phantom_file str </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">phantom_file</td><td>Path to file containing the phantom to be loaded</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>spectrum_file str </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">spectrum_file</td><td>Path to file containing the spectrum used to project in MCGPU</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>lesion_file str </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lesion_file</td><td>Path to file containing the lesion to be inserted (in HDF5 format)</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>materials dict </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">materials</td><td>Dictionary including the materials to be used during projection</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>arguments_mcgpu dict </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arguments_mcgpu</td><td>Arguments to be overridden for the projection in MCGPU</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>arguments_recon dict </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arguments_recon</td><td>Arguments to be overridden for the reconstruction algorithm</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>flatfield_file str </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flatfield_file</td><td>Path to the flatfield file for projection</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>None </p>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
 </div>
