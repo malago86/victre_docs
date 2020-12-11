@@ -5,27 +5,27 @@
 \begin{DoxyCompactItemize}
 \item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a45627045131474e1dc8c218655aee2b2}{\-\_\-\-\_\-init\-\_\-\-\_\-}
-\item 
+\begin{DoxyCompactList}\small\item\em Object constructor for the \hyperlink{namespaceVictre}{Victre} pipeline class. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a372ba5d565da4224e4768316ac640f99}{project}
-\item 
+\begin{DoxyCompactList}\small\item\em Method that runs M\-C\-G\-P\-U to project the phantom. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_ab7dbcc6b27ab4e563391e2d76045f609}{reconstruct}
-\item 
+\begin{DoxyCompactList}\small\item\em Method that runs the reconstruction code for the D\-B\-T volume. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a27d92d6338fea609839441a7f644ae41}{get\-\_\-coordinates\-\_\-dbt}
-\item 
+\begin{DoxyCompactList}\small\item\em Method to get the corresponding coordinates in the D\-B\-T volume from the voxelized coordinates. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a404619920d58648ef74e6307d8b6a7dc}{get\-\_\-coordinates\-\_\-dm}
-\item 
+\begin{DoxyCompactList}\small\item\em Method to get the corresponding coordinates in the D\-M volume from the voxelized coordinates. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a38cf3bb515b5c52d4010867bc3dfc1d0}{save\-\_\-\-D\-I\-C\-O\-M}
-\item 
+\begin{DoxyCompactList}\small\item\em Saves the D\-B\-T generated reconstruction (if available) in D\-I\-C\-O\-M format. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_ab41af48a6a0860907671a80d4d1fffd6}{save\-\_\-\-R\-O\-Is}
-\item 
+\begin{DoxyCompactList}\small\item\em Saves the generated R\-O\-Is (absent and present) in R\-A\-W and H\-D\-F5 formats. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_ae6bc9a133eb885f8aa605ff80fc7f784}{get\-\_\-folder\-\_\-contents}
-\item 
+\begin{DoxyCompactList}\small\item\em Gets a list of files in the given folder. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_aa63a440812d2bbeec712e6c4f9054f1d}{generate\-\_\-spiculated}
-\item 
+\begin{DoxyCompactList}\small\item\em Generates a spiculated mass using the breast\-Mass software. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_aab8f3f01f7247868aecd5bac81323263}{insert\-\_\-lesions}
-\item 
+\begin{DoxyCompactList}\small\item\em Inserts the specified number of lesions in the phantom. \end{DoxyCompactList}\item 
 def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de0312272}{add\-\_\-absent\-\_\-\-R\-O\-Is}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Adds the specified number of absent regions of interest. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -62,9 +62,45 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-\_\-\-\_\-init\-\_\-\-\_\- (
 \begin{DoxyParamCaption}
 \item[{}]{self, }
-\item[{}]{ip}
+\item[{}]{ip, }
+\item[{}]{seed = {\ttfamily None}, }
+\item[{}]{phantom\-\_\-file = {\ttfamily \char`\"{}phantom/pcl\-\_\-2132574818\-\_\-crop.raw.gz\char`\"{}}, }
+\item[{}]{spectrum\-\_\-file = {\ttfamily \char`\"{}./Victre/projection/spectrum/W28kVp\-\_\-Rh50um\-\_\-Be1mm.spc\char`\"{}}, }
+\item[{}]{lesion\-\_\-file = {\ttfamily None}, }
+\item[{}]{materials = {\ttfamily None}, }
+\item[{}]{arguments\-\_\-mcgpu = {\ttfamily dict()}, }
+\item[{}]{arguments\-\_\-recon = {\ttfamily dict()}, }
+\item[{}]{flatfield\-\_\-file = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_a45627045131474e1dc8c218655aee2b2}
+
+
+Object constructor for the \hyperlink{namespaceVictre}{Victre} pipeline class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & I\-P address to run the projection (G\-P\-U enabled) \\
+\hline
+{\em seed} & Random seed used to generate or read the phantom \\
+\hline
+{\em phantom\-\_\-file} & Path to file containing the phantom to be loaded \\
+\hline
+{\em spectrum\-\_\-file} & Path to file containing the spectrum used to project in M\-C\-G\-P\-U \\
+\hline
+{\em lesion\-\_\-file} & Path to file containing the lesion to be inserted (in H\-D\-F5 format) \\
+\hline
+{\em materials} & Dictionary including the materials to be used during projection \\
+\hline
+{\em arguments\-\_\-mcgpu} & Arguments to be overridden for the projection in M\-C\-G\-P\-U \\
+\hline
+{\em arguments\-\_\-recon} & Arguments to be overridden for the reconstruction algorithm \\
+\hline
+{\em flatfield\-\_\-file} & Path to the flatfield file for projection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
 
 
 \subsection{Member Function Documentation}
@@ -79,6 +115,24 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{roi\-\_\-sizes = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de0312272}
+
+
+Adds the specified number of absent regions of interest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lesion\-\_\-type} & Constant with the desired lesion type. Check available lesion types and materials in the \hyperlink{namespaceVictre_1_1Constants}{Constants} file. \\
+\hline
+{\em n} & Number of lesions to be added \\
+\hline
+{\em locations} & List of coordinates in the voxel/phantom space where the lesions will be inserted. If not specified, random locations will be generated. \\
+\hline
+{\em roi\-\_\-sizes} & Size of the region of interest to be calculated to avoid overlapping with other tissues and check out of bounds locations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. A location file will be saved inside the {\ttfamily phantom} folder with the corresponding seed. Negative lesion type means absent R\-O\-I. 
+\end{DoxyReturn}
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_aa63a440812d2bbeec712e6c4f9054f1d}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!generate\-\_\-spiculated@{generate\-\_\-spiculated}}
 \index{generate\-\_\-spiculated@{generate\-\_\-spiculated}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{generate\-\_\-spiculated}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-generate\-\_\-spiculated (
@@ -88,6 +142,20 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{size}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_aa63a440812d2bbeec712e6c4f9054f1d}
+
+
+Generates a spiculated mass using the breast\-Mass software. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed to be used when generating the mass \\
+\hline
+{\em size} & Size of the mass to be used in the breast\-Mass config file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. The result is saved in the {\ttfamily lesions} subfolder 
+\end{DoxyReturn}
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_a27d92d6338fea609839441a7f644ae41}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!get\-\_\-coordinates\-\_\-dbt@{get\-\_\-coordinates\-\_\-dbt}}
 \index{get\-\_\-coordinates\-\_\-dbt@{get\-\_\-coordinates\-\_\-dbt}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{get\-\_\-coordinates\-\_\-dbt}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-get\-\_\-coordinates\-\_\-dbt (
@@ -96,6 +164,18 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{vx\-\_\-location}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_a27d92d6338fea609839441a7f644ae41}
+
+
+Method to get the corresponding coordinates in the D\-B\-T volume from the voxelized coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vx\-\_\-location} & Coordinates in the voxel/phantom space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Coordinates in the D\-B\-T space 
+\end{DoxyReturn}
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_a404619920d58648ef74e6307d8b6a7dc}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!get\-\_\-coordinates\-\_\-dm@{get\-\_\-coordinates\-\_\-dm}}
 \index{get\-\_\-coordinates\-\_\-dm@{get\-\_\-coordinates\-\_\-dm}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{get\-\_\-coordinates\-\_\-dm}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-get\-\_\-coordinates\-\_\-dm (
@@ -104,6 +184,18 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{vx\-\_\-location}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_a404619920d58648ef74e6307d8b6a7dc}
+
+
+Method to get the corresponding coordinates in the D\-M volume from the voxelized coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vx\-\_\-location} & Coordinates in the voxel/phantom space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Coordinates in the D\-M space 
+\end{DoxyReturn}
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_ae6bc9a133eb885f8aa605ff80fc7f784}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!get\-\_\-folder\-\_\-contents@{get\-\_\-folder\-\_\-contents}}
 \index{get\-\_\-folder\-\_\-contents@{get\-\_\-folder\-\_\-contents}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{get\-\_\-folder\-\_\-contents}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-get\-\_\-folder\-\_\-contents (
@@ -112,6 +204,18 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{folder}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_ae6bc9a133eb885f8aa605ff80fc7f784}
+
+
+Gets a list of files in the given folder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em folder} & Path to the folder to be processed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List with files inside the given folder 
+\end{DoxyReturn}
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_aab8f3f01f7247868aecd5bac81323263}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!insert\-\_\-lesions@{insert\-\_\-lesions}}
 \index{insert\-\_\-lesions@{insert\-\_\-lesions}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{insert\-\_\-lesions}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-insert\-\_\-lesions (
@@ -124,6 +228,26 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{roi\-\_\-sizes = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_aab8f3f01f7247868aecd5bac81323263}
+
+
+Inserts the specified number of lesions in the phantom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lesion\-\_\-type} & Constant with the desired lesion type. Check available lesion types and materials in the \hyperlink{namespaceVictre_1_1Constants}{Constants} file. \\
+\hline
+{\em n} & Number of lesions to be added \\
+\hline
+{\em lesion\-\_\-file} & Path to file including the lesion to be inserted (in H\-D\-F5 format). If specified, it will overrite the lesion file specified in the constructor. \\
+\hline
+{\em locations} & List of coordinates in the voxel/phantom space where the lesions will be inserted. If not specified, random locations will be generated. \\
+\hline
+{\em roi\-\_\-sizes} & Size of the region of interest to be calculated to avoid overlapping with other tissues and check out of bounds locations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. A location file will be saved inside the {\ttfamily phantom} folder with the corresponding seed. Positive lesion type means absent R\-O\-I. 
+\end{DoxyReturn}
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_a372ba5d565da4224e4768316ac640f99}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!project@{project}}
 \index{project@{project}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{project}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-project (
@@ -131,6 +255,10 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{self}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_a372ba5d565da4224e4768316ac640f99}
+
+
+Method that runs M\-C\-G\-P\-U to project the phantom. 
+
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_ab7dbcc6b27ab4e563391e2d76045f609}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!reconstruct@{reconstruct}}
 \index{reconstruct@{reconstruct}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{reconstruct}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-reconstruct (
@@ -138,6 +266,10 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{self}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_ab7dbcc6b27ab4e563391e2d76045f609}
+
+
+Method that runs the reconstruction code for the D\-B\-T volume. 
+
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_a38cf3bb515b5c52d4010867bc3dfc1d0}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!save\-\_\-\-D\-I\-C\-O\-M@{save\-\_\-\-D\-I\-C\-O\-M}}
 \index{save\-\_\-\-D\-I\-C\-O\-M@{save\-\_\-\-D\-I\-C\-O\-M}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{save\-\_\-\-D\-I\-C\-O\-M}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-save\-\_\-\-D\-I\-C\-O\-M (
@@ -145,6 +277,10 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{self}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_a38cf3bb515b5c52d4010867bc3dfc1d0}
+
+
+Saves the D\-B\-T generated reconstruction (if available) in D\-I\-C\-O\-M format. 
+
 \hypertarget{classVictre_1_1Pipeline_1_1Pipeline_ab41af48a6a0860907671a80d4d1fffd6}{\index{Victre\-::\-Pipeline\-::\-Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}!save\-\_\-\-R\-O\-Is@{save\-\_\-\-R\-O\-Is}}
 \index{save\-\_\-\-R\-O\-Is@{save\-\_\-\-R\-O\-Is}!Victre::Pipeline::Pipeline@{Victre\-::\-Pipeline\-::\-Pipeline}}
 \subsubsection[{save\-\_\-\-R\-O\-Is}]{\setlength{\rightskip}{0pt plus 5cm}def Victre.\-Pipeline.\-Pipeline.\-save\-\_\-\-R\-O\-Is (
@@ -153,6 +289,15 @@ def \hyperlink{classVictre_1_1Pipeline_1_1Pipeline_a6ed9f1e6df840d9a5753860de031
 \item[{}]{roi\-\_\-sizes}
 \end{DoxyParamCaption}
 )}}\label{classVictre_1_1Pipeline_1_1Pipeline_ab41af48a6a0860907671a80d4d1fffd6}
+
+
+Saves the generated R\-O\-Is (absent and present) in R\-A\-W and H\-D\-F5 formats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em roi\-\_\-sizes} & Size of the R\-O\-Is for the defined lesion types \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
